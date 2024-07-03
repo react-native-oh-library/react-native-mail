@@ -1,3 +1,5 @@
-import { NativeModules } from 'react-native';
+import { NativeModules, Platform } from 'react-native';
+import NativeRNMailHarmony from './src/NativeRNMail.harmonys'
 
-export default NativeModules.RNMail;
+export default Platform.OS == 'harmony' ? NativeRNMailHarmony : NativeModules.RNMail;
+
