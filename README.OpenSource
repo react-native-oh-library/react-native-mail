@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-mail",
+        "License": "MIT License",
+        "License File": "https://github.com/chirag04/react-native-mail/blob/master/LICENSE",
+        "Version Number": "6.1.1-0.0.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/chirag04/react-native-mail",
+        "Description": "mail for react-native"
+    }
+]
