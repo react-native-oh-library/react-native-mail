@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-oh-tpl/react-native-mail",
-  "version": "6.1.1-0.0.1",
+  "name": "@react-native-ohos/react-native-mail",
+  "version": "6.1.1",
   "description": "A wrapper on top of MFMailComposeViewController from iOS and Mail Intent on android and e-mail on harmony",
   "author": {
     "name": "Chirag Jain",
@@ -8,6 +8,9 @@
     "url": "http://chiragjain.tumblr.com"
   },
   "license": "MIT",
+  "scripts": {
+    "codegen-lib": "react-native codegen-lib-harmony --no-safety-check --npm-package-name react-native-mail --cpp-output-path ./harmony/mail/src/main/cpp/generated --ets-output-path ./harmony/mail/src/main/ets/generated --turbo-modules-spec-paths ./src/NativeRNMail.harmonys.ts"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/react-native-oh-library/react-native-mail.git"
@@ -23,12 +26,7 @@
     "index.d.ts"
   ],
   "harmony": {
-    "alias": "react-native-mail",
-    "codegenConfig": {
-      "specPaths": [
-        "./src"
-      ]
-    }
+    "alias": "react-native-mail"
   },
   "keywords": [
     "react",
@@ -41,5 +39,8 @@
   ],
   "dependencies": {
     "react-native-mail": "6.1.1"
+  },
+  "devDependencies": {
+    "react-native-harmony-cli": "npm:@react-native-oh/react-native-harmony-cli@^0.0.27"
   }
 }
