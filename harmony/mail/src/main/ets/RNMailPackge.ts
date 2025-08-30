@@ -24,7 +24,7 @@
 
 import { RNPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
 import type { TurboModule, TurboModuleContext, } from '@rnoh/react-native-openharmony/ts';
-import { TM } from "@rnoh/react-native-openharmony/generated/ts"
+import { TM } from "./generated/ts"
 import { RNMailTurboModule } from './RNMailTurboModule';
 
 class RNMailTurboModulesFactory extends TurboModulesFactory {

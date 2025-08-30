@@ -25,7 +25,7 @@ import { Want } from '@kit.AbilityKit';
 import { BusinessError } from '@kit.BasicServicesKit';
 import fileUri from '@ohos.file.fileuri';
 import { TurboModule } from '@rnoh/react-native-openharmony/ts';
-import { TM } from "@rnoh/react-native-openharmony/generated/ts";
+import { TM } from "./generated/ts";
 import Logger from './Logger';
 import { mainOptions } from './types';
 import { supportedMimeTypes } from './constant';
