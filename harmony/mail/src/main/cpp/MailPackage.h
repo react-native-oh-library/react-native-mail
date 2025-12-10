@@ -21,27 +21,16 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
+#ifndef MAILPACKAGE_H
+#define MAILPACKAGE_H
 
-import { RNPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
-import type { TurboModule, TurboModuleContext, } from '@rnoh/react-native-openharmony/ts';
-import { TM } from "@rnoh/react-native-openharmony/generated/ts"
-import { RNMailTurboModule } from './RNMailTurboModule';
+#include "generated/RNOH/generated/BaseReactNativeMailPackage.h"
+#pragma once
 
-class RNMailTurboModulesFactory extends TurboModulesFactory {
-  createTurboModule(name: string): TurboModule | null {
-    if (name === 'RNMail' || name === TM.RNMail.NAME) {
-      return new RNMailTurboModule(this.ctx);
-    }
-    return null;
-  }
-
-  hasTurboModule(name: string): boolean {
-    return name === 'RNMail' || name === TM.RNMail.NAME;
-  }
-}
-
-export class RNMailPackage extends RNPackage {
-  createTurboModulesFactory(ctx: TurboModuleContext): TurboModulesFactory {
-    return new RNMailTurboModulesFactory(ctx);
-  }
-}
+namespace rnoh {
+class MailPackage : public BaseReactNativeMailPackage {
+    using Super = BaseReactNativeMailPackage;
+    using Super::Super;
+};
+} // namespace rnoh
+#endif // MAILPACKAGE_H

@@ -1,6 +1,6 @@
-# @react-native-oh-tpl/react-native-mail
+# @react-native-ohos/react-native-mail
 
-This project is based on [react-native-mail](https://github.com/chirag04/react-native-mail)
+This project is based on [react-native-mail@6.1.1](https://github.com/chirag04/react-native-mail/tree/v6.1.1)
 
 ## Documentation
 
