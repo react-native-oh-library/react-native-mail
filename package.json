@@ -25,9 +25,16 @@
     "index.js",
     "index.d.ts"
   ],
+
   "harmony": {
-    "alias": "react-native-mail"
-  },
+ 	  "alias": "react-native-mail",
+ 	  "autolinking": {
+ 	     "etsPackageClassName":"RNMailPackage",
+ 	  	 "cppPackageClassName":"MailPackage",
+ 	  	 "cmakeLibraryTargetName": "rnoh_mail", 
+ 	  	 "ohPackageName": "@react-native-ohos/react-native-mail"
+ 	  }
+ 	},
   "keywords": [
     "react",
     "react-native",
