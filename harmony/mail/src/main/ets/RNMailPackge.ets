@@ -22,10 +22,11 @@
  * SOFTWARE.
  */
 
-import { RNPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
+import { TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
 import type { TurboModule, TurboModuleContext, } from '@rnoh/react-native-openharmony/ts';
 import { TM } from "./generated/ts"
 import { RNMailTurboModule } from './RNMailTurboModule';
+import { RNOHPackage } from '@rnoh/react-native-openharmony';
 
 class RNMailTurboModulesFactory extends TurboModulesFactory {
   createTurboModule(name: string): TurboModule | null {
@@ -40,7 +41,7 @@ class RNMailTurboModulesFactory extends TurboModulesFactory {
   }
 }
 
-export class RNMailPackage extends RNPackage {
+export class RNMailPackage extends RNOHPackage {
   createTurboModulesFactory(ctx: TurboModuleContext): TurboModulesFactory {
     return new RNMailTurboModulesFactory(ctx);
   }
