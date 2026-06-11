@@ -1,4 +1,4 @@
-# v6.3.0-rc.1
+# v6.3.0
 * feat: support autolink
 
 # v6.1.2-rc.1
